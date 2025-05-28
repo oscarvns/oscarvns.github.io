@@ -23,12 +23,12 @@ const Navbar: React.FC = () => {
   const closeMenu = () => setIsOpen(false);
 
   const navLinks = [
-    { text: 'Home', path: '/' },
-    { text: 'About Me', path: '/about' },
-    { text: 'Projects', path: '/projects' },
-    { text: 'Notebook', path: '/notebook' },
-    { text: 'Final Reflection', path: '/final-reflection' },
-    { text: 'Bibliography', path: '/bibliography' },
+    { text: 'Inicio', path: '/' },
+    { text: 'Sobre mi', path: '/about' },
+    // { text: 'Proyectos', path: '/projects' },
+    { text: 'Cuaderno', path: '/notebook' },
+    { text: 'Reflexión final', path: '/final-reflection' },
+    { text: 'Bibliografía', path: '/bibliography' },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
     >
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          Portfolio
+          Portafolio
         </Link>
 
         {/* Desktop navigation */}
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <a 
-            href="https://github.com" 
+            href="https://github.com/oscarvns" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"

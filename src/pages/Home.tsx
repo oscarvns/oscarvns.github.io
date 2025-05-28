@@ -32,11 +32,11 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6">
-              Welcome to My{' '}
-              <span className="text-blue-600 dark:text-blue-400">Learning Journey</span>
+              Bienvenido a mi{' '}
+              <span className="text-blue-600 dark:text-blue-400">viaje de aprendizaje</span>
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Documenting my growth, projects, and reflections as I explore new technologies and concepts.
+              Documentar mi crecimiento, mis proyectos y mis reflexiones a medida que exploro nuevas tecnologías y conceptos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -67,9 +67,9 @@ const Home: React.FC = () => {
       <section className="py-16 px-4 bg-white dark:bg-slate-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12">
-            Explore My Portfolio
+            Explora mi portafolio
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               whileHover={{ y: -5 }}
               className="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md p-8 flex flex-col items-center text-center transition-all hover:shadow-lg"
@@ -78,20 +78,20 @@ const Home: React.FC = () => {
                 <BookOpen className="text-blue-600 dark:text-blue-400" size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
-                Learning Notebook
+                Cuaderno de aprendizaje
               </h3>
               <p className="text-slate-600 dark:text-slate-300 mb-6">
-                Explore my weekly learning journey, including topics, exercises, and reflections.
+                Explora mi cuaderno de aprendizaje semanal, que incluye temas, ejercicios y reflexiones.
               </p>
               <Link
                 to="/notebook"
                 className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
               >
-                View Notebook
+                Ver cuaderno
               </Link>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               whileHover={{ y: -5 }}
               className="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md p-8 flex flex-col items-center text-center transition-all hover:shadow-lg"
             >
@@ -99,18 +99,18 @@ const Home: React.FC = () => {
                 <Code className="text-blue-600 dark:text-blue-400" size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
-                Completed Projects
+                Proyectos completados
               </h3>
               <p className="text-slate-600 dark:text-slate-300 mb-6">
-                Browse through my portfolio of completed projects and case studies.
+                Navega a través de mi portafolio de proyectos completados y estudios de caso.
               </p>
               <Link
                 to="/projects"
                 className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
               >
-                View Projects
+                Ver proyectos
               </Link>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               whileHover={{ y: -5 }}
@@ -120,16 +120,16 @@ const Home: React.FC = () => {
                 <BookMarked className="text-blue-600 dark:text-blue-400" size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
-                Final Reflections
+                Reflexiones finales
               </h3>
               <p className="text-slate-600 dark:text-slate-300 mb-6">
-                Read my metacognitive reflection on what and how I learned throughout this journey.
+                Lee mi reflexión metacognitiva sobre lo que aprendí y cómo lo hice.
               </p>
               <Link
                 to="/final-reflection"
                 className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
               >
-                View Reflections
+                Ver reflexiones
               </Link>
             </motion.div>
           </div>

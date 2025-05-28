@@ -94,17 +94,17 @@ const Bibliography: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-6">
-              Bibliography
+              Bibliografía
             </h1>
             <p className="text-center text-slate-600 dark:text-slate-300 mb-12 max-w-2xl mx-auto">
-              A collection of books and online resources that supported my learning journey.
+              Una colección de libros y recursos en línea que apoyaron mi proceso de aprendizaje.
             </p>
 
             <div className="mb-8">
               <div className="flex items-center mb-6">
                 <BookOpen className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  Books
+                  Libros
                 </h2>
               </div>
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 divide-y divide-slate-200 dark:divide-slate-700">
@@ -124,7 +124,7 @@ const Bibliography: React.FC = () => {
               <div className="flex items-center mb-6">
                 <LinkIcon className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  Websites
+                  Sitios Web
                 </h2>
               </div>
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 divide-y divide-slate-200 dark:divide-slate-700">
@@ -149,17 +149,7 @@ const Bibliography: React.FC = () => {
                   ))}
               </div>
             </div>
-
-            <div className="mt-12">
-              <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-2">
-                  Note on References
-                </h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  This bibliography includes only books and online resources, as requested. No video tutorials or courses are included, though they also formed a valuable part of my learning process. All references are formatted according to APA style guidelines.
-                </p>
-              </div>
-            </div>
+ 
           </motion.div>
         </div>
       </div>

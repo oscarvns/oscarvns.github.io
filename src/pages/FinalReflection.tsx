@@ -14,40 +14,40 @@ const FinalReflection: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-6">
-              Final <span className="text-blue-600 dark:text-blue-400">Reflection</span>
+              Reflexión <span className="text-blue-600 dark:text-blue-400">Final</span>
             </h1>
             <p className="text-center text-slate-600 dark:text-slate-300 mb-12 max-w-2xl mx-auto">
-              A metacognitive analysis of my learning journey, exploring what I learned, how I learned it, and how this knowledge will shape my future endeavors.
+              Un análisis metacognitivo de mi viaje de aprendizaje, explorando lo que aprendí, cómo lo aprendí y cómo este conocimiento dará forma a mis futuros proyectos.
             </p>
 
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8 mb-8">
               <div className="flex items-center mb-6">
                 <BookOpen className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  What I Learned
+                  Lo Que Aprendí
                 </h2>
               </div>
               <div className="space-y-4">
                 <p className="text-slate-600 dark:text-slate-300">
-                  Throughout this course, I've gained a comprehensive understanding of web development fundamentals, from basic HTML and CSS to more advanced concepts like responsive design, JavaScript programming, and modern frameworks like React.
+                  A lo largo de este curso, he adquirido una comprensión completa de los fundamentos del desarrollo web, desde HTML y CSS básicos hasta conceptos más avanzados como diseño responsivo, programación en JavaScript y frameworks modernos como React.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Week 1 established the essential building blocks with HTML structure, CSS styling, and JavaScript basics. These fundamentals proved crucial for everything that followed, providing the syntax and mental models needed for web development.
+                  La Semana 1 estableció los bloques esenciales con estructura HTML, estilización CSS y fundamentos de JavaScript. Estos fundamentos resultaron cruciales para todo lo que siguió, proporcionando la sintaxis y los modelos mentales necesarios para el desarrollo web.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Week 2 expanded my knowledge with responsive design principles and deeper JavaScript concepts. Learning about media queries transformed my understanding of how modern websites adapt to different devices, while exploring JavaScript functions enhanced my programming capabilities.
+                  La Semana 2 expandió mi conocimiento con principios de diseño responsivo y conceptos más profundos de JavaScript. Aprender sobre media queries transformó mi comprensión de cómo los sitios web modernos se adaptan a diferentes dispositivos, mientras que explorar funciones de JavaScript mejoró mis capacidades de programación.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Week 3 introduced me to React and API integration, which represented a significant leap in complexity but also in capability. Understanding component-based architecture and state management opened new possibilities for building interactive web applications.
+                  La Semana 3 me introdujo a React y la integración de APIs, lo que representó un salto significativo en complejidad pero también en capacidad. Entender la arquitectura basada en componentes y la gestión de estado abrió nuevas posibilidades para construir aplicaciones web interactivas.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Beyond specific technologies, I learned broader concepts like:
+                  Más allá de tecnologías específicas, aprendí conceptos más amplios como:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 ml-4">
-                  <li>The importance of user experience and accessibility in web design</li>
-                  <li>How to approach problem-solving methodically in programming</li>
-                  <li>Best practices for writing clean, maintainable code</li>
-                  <li>The value of documentation and continued learning in a rapidly evolving field</li>
+                  <li>La importancia de la experiencia de usuario y la accesibilidad en el diseño web</li>
+                  <li>Cómo abordar la resolución de problemas metódicamente en programación</li>
+                  <li>Mejores prácticas para escribir código limpio y mantenible</li>
+                  <li>El valor de la documentación y el aprendizaje continuo en un campo que evoluciona rápidamente</li>
                 </ul>
               </div>
             </div>
@@ -56,37 +56,37 @@ const FinalReflection: React.FC = () => {
               <div className="flex items-center mb-6">
                 <Lightbulb className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  How I Learned
+                  Cómo Aprendí
                 </h2>
               </div>
               <div className="space-y-4">
                 <p className="text-slate-600 dark:text-slate-300">
-                  My learning journey combined multiple approaches, each contributing uniquely to my understanding and skill development:
+                  Mi viaje de aprendizaje combinó múltiples enfoques, cada uno contribuyendo de manera única a mi comprensión y desarrollo de habilidades:
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Structured Learning</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Estructurado</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Following the course curriculum provided a logical progression of concepts, with each week building upon the previous one. This scaffolded approach helped me construct a coherent mental model of web development.
+                  Seguir el plan de estudios del curso proporcionó una progresión lógica de conceptos, con cada semana construyendo sobre la anterior. Este enfoque escalonado me ayudó a construir un modelo mental coherente del desarrollo web.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Hands-on Practice</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Práctica Práctica</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  The laboratory exercises were crucial for cementing my understanding. Building actual components and applications forced me to apply theoretical knowledge and develop problem-solving skills. I found that I learned most effectively when tackling real coding challenges.
+                  Los ejercicios de laboratorio fueron cruciales para cimentar mi comprensión. Construir componentes y aplicaciones reales me obligó a aplicar conocimientos teóricos y desarrollar habilidades de resolución de problemas. Descubrí que aprendía más efectivamente cuando abordaba desafíos reales de programación.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Error-Driven Learning</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Basado en Errores</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Some of my most valuable learning moments came from debugging code that didn't work as expected. These challenges required deeper investigation of concepts and often led to "aha" moments that solidified my understanding.
+                  Algunos de mis momentos de aprendizaje más valiosos vinieron de depurar código que no funcionaba como se esperaba. Estos desafíos requirieron una investigación más profunda de los conceptos y a menudo llevaron a momentos de "¡ajá!" que solidificaron mi comprensión.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Reflective Practice</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Práctica Reflexiva</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Taking time to reflect on my learning weekly helped me identify patterns in my understanding and areas needing improvement. This metacognitive approach allowed me to adjust my learning strategies and focus on challenging concepts.
+                  Tomar tiempo para reflexionar sobre mi aprendizaje semanalmente me ayudó a identificar patrones en mi comprensión y áreas que necesitaban mejorar. Este enfoque metacognitivo me permitió ajustar mis estrategias de aprendizaje y enfocarme en conceptos desafiantes.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Resource Utilization</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Utilización de Recursos</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  I leveraged various resources beyond course materials, including documentation, tutorials, and community forums. Learning to find and evaluate resources independently is a skill that will serve me well in continued learning.
+                  Aproveché varios recursos más allá del material del curso, incluyendo documentación, tutoriales y foros comunitarios. Aprender a encontrar y evaluar recursos de forma independiente es una habilidad que me servirá en el aprendizaje continuo.
                 </p>
               </div>
             </div>
@@ -95,37 +95,37 @@ const FinalReflection: React.FC = () => {
               <div className="flex items-center mb-6">
                 <GraduationCap className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  Moving Forward
+                  Mirando Hacia Adelante
                 </h2>
               </div>
               <div className="space-y-4">
                 <p className="text-slate-600 dark:text-slate-300">
-                  This learning journey has laid a solid foundation for my continued growth as a web developer. As I move forward, I plan to:
+                  Este viaje de aprendizaje ha establecido una base sólida para mi continuo crecimiento como desarrollador web. Mirando hacia adelante, planeo:
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Deepen Technical Knowledge</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Profundizar en Conocimientos Técnicos</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  I want to further explore advanced React concepts, learn about state management libraries like Redux, and dive into server-side rendering and Next.js. I'm also interested in exploring TypeScript for type-safe JavaScript development.
+                  Quiero explorar más a fondo conceptos avanzados de React, aprender sobre bibliotecas de gestión de estado como Redux, y sumergirme en renderizado del lado del servidor y Next.js. También estoy interesado en explorar TypeScript para desarrollo JavaScript con tipos seguros.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Build More Complex Projects</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Construir Proyectos Más Complejos</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  To solidify my skills, I plan to develop more sophisticated applications that integrate multiple technologies and address real-world problems. Project-based learning will continue to be central to my growth.
+                  Para solidificar mis habilidades, planeo desarrollar aplicaciones más sofisticadas que integren múltiples tecnologías y aborden problemas del mundo real. El aprendizaje basado en proyectos seguirá siendo central para mi crecimiento.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Contribute to Open Source</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Contribuir al Código Abierto</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Participating in open-source projects will expose me to different codebases and collaborative development practices. This will improve both my technical skills and my ability to work with others.
+                  Participar en proyectos de código abierto me expondrá a diferentes bases de código y prácticas de desarrollo colaborativo. Esto mejorará tanto mis habilidades técnicas como mi capacidad para trabajar con otros.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Stay Current with Industry Trends</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Mantenerme al Día con Tendencias de la Industria</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Web development evolves rapidly, so I'll need to stay informed about emerging technologies and best practices. Continuous learning will be essential throughout my career.
+                  El desarrollo web evoluciona rápidamente, por lo que necesitaré mantenerme informado sobre tecnologías emergentes y mejores prácticas. El aprendizaje continuo será esencial a lo largo de mi carrera.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Final Thoughts</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Reflexiones Finales</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  This course has not only taught me technical skills but also how to learn effectively in a technical field. The ability to approach new concepts methodically, practice deliberately, and reflect on my learning will be invaluable as I continue to grow as a developer.
+                  Este curso no solo me ha enseñado habilidades técnicas sino también cómo aprender efectivamente en un campo técnico. La capacidad de abordar nuevos conceptos metódicamente, practicar deliberadamente y reflexionar sobre mi aprendizaje será invaluable mientras continúo creciendo como desarrollador.
                 </p>
                 
                 <div className="mt-8 text-center">
@@ -133,7 +133,7 @@ const FinalReflection: React.FC = () => {
                     to="/bibliography"
                     className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
                   >
-                    View Bibliography
+                    Ver Bibliografía
                     <ArrowRight className="ml-1" size={16} />
                   </Link>
                 </div>

@@ -17,25 +17,25 @@ const Notebook: React.FC = () => {
     {
       id: 'week1',
       week: 1,
-      title: 'Introduction to Web Development',
-      description: 'Learning the fundamentals of HTML, CSS, and basic JavaScript concepts.',
-      topics: ['HTML Structure', 'CSS Styling', 'JavaScript Basics'],
+      title: 'Introducción al Desarrollo Web',
+      description: 'Aprendiendo los fundamentos de HTML, CSS y conceptos básicos de JavaScript.',
+      topics: ['Estructura HTML', 'Estilos CSS', 'Fundamentos JavaScript'],
       path: '/notebook/week-1',
     },
     {
       id: 'week2',
       week: 2,
-      title: 'Responsive Design & JavaScript',
-      description: 'Exploring responsive design principles and advancing JavaScript skills.',
-      topics: ['Responsive Design', 'Media Queries', 'JavaScript Functions'],
+      title: 'Diseño Responsivo y JavaScript',
+      description: 'Explorando principios de diseño responsivo y avanzando en habilidades de JavaScript.',
+      topics: ['Diseño Responsivo', 'Media Queries', 'Funciones JavaScript'],
       path: '/notebook/week-2',
     },
     {
       id: 'week3',
       week: 3,
-      title: 'Frontend Frameworks & APIs',
-      description: 'Introduction to React and working with APIs for dynamic content.',
-      topics: ['React Basics', 'Components', 'API Integration'],
+      title: 'Frameworks Frontend y APIs',
+      description: 'Introducción a React y trabajo con APIs para contenido dinámico.',
+      topics: ['Fundamentos de React', 'Componentes', 'Integración API'],
       path: '/notebook/week-3',
     },
     {
@@ -50,8 +50,8 @@ const Notebook: React.FC = () => {
       id: 'week5',
       week: 5,
       title: 'Desarrollo Frontend con Frameworks JavaScript',
-      description: 'Exploring React, component-based architecture, and styling approaches.',
-      topics: ['React Fundamentals', 'Props & Children', 'Styling in React'],
+      description: 'Explorando React, arquitectura basada en componentes y enfoques de estilización.',
+      topics: ['Fundamentos de React', 'Props y Children', 'Estilos en React'],
       path: '/notebook/week-5',
     },    
     {
@@ -70,7 +70,6 @@ const Notebook: React.FC = () => {
       topics: ['useState/useEffect', 'useContext/useReducer', 'Hooks Personalizados'],
       path: '/notebook/week-7',
     },
-
   ];
 
   const containerVariants = {
@@ -106,7 +105,7 @@ const Notebook: React.FC = () => {
             Cuaderno de <span className="text-blue-600 dark:text-blue-400">Aprendizaje</span>
           </h1>
           <p className="text-center text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12">
-            Un registro semanal de mi  aprendizaje, incluidos los temas estudiados, los ejercicios realizados y las reflexiones personales.
+            Un registro semanal de mi aprendizaje, incluidos los temas estudiados, los ejercicios realizados y las reflexiones personales.
           </p>
         </motion.div>
 
@@ -167,7 +166,7 @@ const Notebook: React.FC = () => {
             to="/final-reflection"
             className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
           >
-            View Final Reflection
+            Ver Reflexión Final
             <ArrowRight className="ml-2" size={16} />
           </Link>
         </div>

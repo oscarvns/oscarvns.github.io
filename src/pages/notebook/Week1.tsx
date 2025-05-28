@@ -7,7 +7,7 @@ import { useTheme } from '../../context/ThemeContext';
 import vscDarkPlus from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus';
 import vs from 'react-syntax-highlighter/dist/cjs/styles/prism/vs';
 
-const WeekOne: React.FC = () => {
+const Week1: React.FC = () => {
   const { theme } = useTheme();
   const codeStyle = theme === 'dark' ? vscDarkPlus : vs;
 
@@ -537,4 +537,4 @@ code --install-extension zhuangtongfa.material-theme`}
   );
 };
 
-export default WeekOne;
+export default Week1;
