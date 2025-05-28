@@ -45,12 +45,12 @@ const Home: React.FC = () => {
               >
                 Sobre mi 
               </Link>
-              <Link
+              {/* <Link
                 to="/projects"
                 className="px-8 py-3 rounded-lg bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 font-medium border border-blue-600 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors shadow-md hover:shadow-lg"
               >
                 Ver proyectos
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         </div>
