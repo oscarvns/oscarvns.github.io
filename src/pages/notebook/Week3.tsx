@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, BookOpen, Code, Lightbulb } from 'lucide-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { useTheme } from '../../context/ThemeContext';
-import { vscDarkPlus, vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import vscDarkPlus from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus';
+import vs from 'react-syntax-highlighter/dist/cjs/styles/prism/vs';
 
 const Week3: React.FC = () => {
   const { theme } = useTheme();
