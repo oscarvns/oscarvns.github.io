@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, BookOpen, Code, Database, Globe, Lightbulb, Settings, Zap, Shield } from 'lucide-react';
+import { ArrowLeft, Code, Database, Globe, Lightbulb, Zap } from 'lucide-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { useTheme } from '../../context/ThemeContext';
 import vscDarkPlus from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus';

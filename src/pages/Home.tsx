@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, BookOpen, Code, BookMarked } from 'lucide-react';
+import { ChevronDown, BookOpen, BookMarked } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {

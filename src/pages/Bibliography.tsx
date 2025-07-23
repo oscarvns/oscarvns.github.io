@@ -331,18 +331,6 @@ const Bibliography: React.FC = () => {
     }
   };
 
-  const getCategoryColor = (category: string) => {
-    switch (category) {
-      case 'frontend':
-        return 'bg-blue-50 dark:bg-blue-900/20';
-      case 'backend':
-        return 'bg-green-50 dark:bg-green-900/20';
-      case 'architecture':
-        return 'bg-purple-50 dark:bg-purple-900/20';
-      default:
-        return 'bg-slate-50 dark:bg-slate-900/20';
-    }
-  };
 
   return (
     <div className="min-h-screen pt-20 bg-slate-50 dark:bg-slate-900">
