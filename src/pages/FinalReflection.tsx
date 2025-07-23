@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Lightbulb, GraduationCap, ArrowRight } from 'lucide-react';
+import { BookOpen, Lightbulb, GraduationCap, ArrowRight, Code, Database, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const FinalReflection: React.FC = () => {
@@ -17,9 +17,10 @@ const FinalReflection: React.FC = () => {
               Reflexión <span className="text-blue-600 dark:text-blue-400">Final</span>
             </h1>
             <p className="text-center text-slate-600 dark:text-slate-300 mb-12 max-w-2xl mx-auto">
-              Un análisis metacognitivo de mi viaje de aprendizaje, explorando lo que aprendí, cómo lo aprendí y cómo este conocimiento dará forma a mis futuros proyectos.
+              Un análisis metacognitivo de mi viaje completo de aprendizaje en desarrollo web, desde fundamentos frontend hasta arquitecturas de microservicios con Django.
             </p>
 
+            {/* Lo Que Aprendí */}
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8 mb-8">
               <div className="flex items-center mb-6">
                 <BookOpen className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
@@ -27,31 +28,105 @@ const FinalReflection: React.FC = () => {
                   Lo Que Aprendí
                 </h2>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <p className="text-slate-600 dark:text-slate-300">
-                  A lo largo de este curso, he adquirido una comprensión completa de los fundamentos del desarrollo web, desde HTML y CSS básicos hasta conceptos más avanzados como diseño responsivo, programación en JavaScript y frameworks modernos como React.
+                  Este curso me llevó en un viaje transformador desde los fundamentos del desarrollo web hasta 
+                  arquitecturas empresariales complejas, proporcionándome una comprensión holística del ecosistema 
+                  de desarrollo moderno.
                 </p>
-                <p className="text-slate-600 dark:text-slate-300">
-                  La Semana 1 estableció los bloques esenciales con estructura HTML, estilización CSS y fundamentos de JavaScript. Estos fundamentos resultaron cruciales para todo lo que siguió, proporcionando la sintaxis y los modelos mentales necesarios para el desarrollo web.
-                </p>
-                <p className="text-slate-600 dark:text-slate-300">
-                  La Semana 2 expandió mi conocimiento con principios de diseño responsivo y conceptos más profundos de JavaScript. Aprender sobre media queries transformó mi comprensión de cómo los sitios web modernos se adaptan a diferentes dispositivos, mientras que explorar funciones de JavaScript mejoró mis capacidades de programación.
-                </p>
-                <p className="text-slate-600 dark:text-slate-300">
-                  La Semana 3 me introdujo a React y la integración de APIs, lo que representó un salto significativo en complejidad pero también en capacidad. Entender la arquitectura basada en componentes y la gestión de estado abrió nuevas posibilidades para construir aplicaciones web interactivas.
-                </p>
-                <p className="text-slate-600 dark:text-slate-300">
-                  Más allá de tecnologías específicas, aprendí conceptos más amplios como:
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 ml-4">
-                  <li>La importancia de la experiencia de usuario y la accesibilidad en el diseño web</li>
-                  <li>Cómo abordar la resolución de problemas metódicamente en programación</li>
-                  <li>Mejores prácticas para escribir código limpio y mantenible</li>
-                  <li>El valor de la documentación y el aprendizaje continuo en un campo que evoluciona rápidamente</li>
-                </ul>
+
+                {/* Fase Frontend */}
+                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <Code className="text-blue-600 dark:text-blue-400 mr-2" size={20} />
+                    <h3 className="text-lg font-semibold text-slate-800 dark:text-white">
+                      Fundamentos Frontend (Semanas 1-7)
+                    </h3>
+                  </div>
+                  <div className="space-y-3 text-slate-600 dark:text-slate-300">
+                    <p>
+                      <strong>Semanas 1-2:</strong> Establecí las bases sólidas con HTML semántico, CSS moderno 
+                      y JavaScript fundamental. El diseño responsivo y media queries transformaron mi comprensión 
+                      de cómo crear experiencias adaptables.
+                    </p>
+                    <p>
+                      <strong>Semanas 3-4:</strong> La introducción a React marcó un punto de inflexión. Comprender 
+                      componentes, props, y la manipulación del DOM virtual cambió completamente mi perspectiva sobre 
+                      el desarrollo frontend. TypeScript y Canvas añadieron dimensiones de tipado seguro y gráficos interactivos.
+                    </p>
+                    <p>
+                      <strong>Semanas 5-7:</strong> Profundicé en React con hooks, gestión de estado, y consumo de APIs. 
+                      Los hooks personalizados y el patrón de renderizado condicional me dieron herramientas poderosas 
+                      para crear interfaces dinámicas y reutilizables.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Fase Backend */}
+                <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <Database className="text-green-600 dark:text-green-400 mr-2" size={20} />
+                    <h3 className="text-lg font-semibold text-slate-800 dark:text-white">
+                      Desarrollo Backend (Semanas 9-12)
+                    </h3>
+                  </div>
+                  <div className="space-y-3 text-slate-600 dark:text-slate-300">
+                    <p>
+                      <strong>Semana 9:</strong> La transición al backend me expuso a arquitecturas server-side, 
+                      servidores web, y diferentes lenguajes como PHP y JSP. Comprender la separación frontend/backend 
+                      fue fundamental.
+                    </p>
+                    <p>
+                      <strong>Semana 10:</strong> Python se convirtió en mi lenguaje backend preferido. La sintaxis 
+                      elegante, POO robusta, y el ecosistema de librerías me impresionaron profundamente.
+                    </p>
+                    <p>
+                      <strong>Semanas 11-12:</strong> Django transformó mi comprensión del desarrollo web. El patrón MTV, 
+                      ORM, sistema de autenticación, y panel de administración me mostraron cómo crear aplicaciones 
+                      web completas y seguras de manera eficiente.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Fase Avanzada */}
+                <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <Globe className="text-purple-600 dark:text-purple-400 mr-2" size={20} />
+                    <h3 className="text-lg font-semibold text-slate-800 dark:text-white">
+                      Arquitecturas Avanzadas (Semanas 13-14)
+                    </h3>
+                  </div>
+                  <div className="space-y-3 text-slate-600 dark:text-slate-300">
+                    <p>
+                      <strong>Semana 13:</strong> Django REST Framework me introdujo al diseño de APIs RESTful modernas. 
+                      HATEOAS, serialización avanzada, filtrado, paginación y seguridad API me prepararon para el 
+                      desarrollo de servicios escalables.
+                    </p>
+                    <p>
+                      <strong>Semana 14:</strong> Los microservicios representaron el pináculo de complejidad arquitectural. 
+                      Docker, Kubernetes, comunicación entre servicios, y monitoreo distribuido me expusieron a 
+                      tecnologías de nivel empresarial.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-slate-100 dark:bg-slate-700 rounded-lg p-6">
+                  <h4 className="font-semibold text-slate-800 dark:text-white mb-3">Conceptos Transversales Aprendidos:</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-600 dark:text-slate-300">
+                    <li>• Principios de diseño UX/UI</li>
+                    <li>• Patrones de arquitectura de software</li>
+                    <li>• Seguridad web y mejores prácticas</li>
+                    <li>• Testing y debugging metodológico</li>
+                    <li>• Versionado con Git y colaboración</li>
+                    <li>• Optimización de rendimiento</li>
+                    <li>• Containerización y orquestación</li>
+                    <li>• Monitoreo y observabilidad</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
+            {/* Cómo Aprendí */}
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8 mb-8">
               <div className="flex items-center mb-6">
                 <Lightbulb className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
@@ -61,36 +136,55 @@ const FinalReflection: React.FC = () => {
               </div>
               <div className="space-y-4">
                 <p className="text-slate-600 dark:text-slate-300">
-                  Mi viaje de aprendizaje combinó múltiples enfoques, cada uno contribuyendo de manera única a mi comprensión y desarrollo de habilidades:
+                  Mi metodología de aprendizaje evolucionó a medida que progresaba, adaptándose a la creciente 
+                  complejidad de los conceptos:
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Estructurado</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Progresivo y Estructurado</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Seguir el plan de estudios del curso proporcionó una progresión lógica de conceptos, con cada semana construyendo sobre la anterior. Este enfoque escalonado me ayudó a construir un modelo mental coherente del desarrollo web.
+                  La progresión cuidadosamente diseñada del curso, desde HTML básico hasta microservicios, 
+                  me permitió construir conocimiento de manera incremental. Cada semana proporcionó las 
+                  bases necesarias para la siguiente, creando una escalera de aprendizaje sólida.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Práctica Práctica</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Laboratorios Prácticos Intensivos</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Los ejercicios de laboratorio fueron cruciales para cimentar mi comprensión. Construir componentes y aplicaciones reales me obligó a aplicar conocimientos teóricos y desarrollar habilidades de resolución de problemas. Descubrí que aprendía más efectivamente cuando abordaba desafíos reales de programación.
+                  Los laboratorios semanales fueron cruciales para mi desarrollo. Desde crear componentes React 
+                  hasta implementar APIs RESTful completas y arquitecturas de microservicios, la práctica 
+                  constante solidificó mi comprensión teórica.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Basado en Errores</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Debugging Como Herramienta de Aprendizaje</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Algunos de mis momentos de aprendizaje más valiosos vinieron de depurar código que no funcionaba como se esperaba. Estos desafíos requirieron una investigación más profunda de los conceptos y a menudo llevaron a momentos de "¡ajá!" que solidificaron mi comprensión.
+                  Los errores se convirtieron en mis mejores maestros. Desde bugs de CSS hasta problemas de 
+                  comunicación entre microservicios, cada error resuelto profundizó mi comprensión de los 
+                  sistemas subyacentes.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Práctica Reflexiva</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Documentación Reflexiva</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Tomar tiempo para reflexionar sobre mi aprendizaje semanalmente me ayudó a identificar patrones en mi comprensión y áreas que necesitaban mejorar. Este enfoque metacognitivo me permitió ajustar mis estrategias de aprendizaje y enfocarme en conceptos desafiantes.
+                  Mantener este cuaderno digital no solo organizó mi conocimiento, sino que me obligó a 
+                  articular conceptos complejos, identificar patrones, y reflexionar sobre mi progreso 
+                  metacognitivo semanalmente.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Utilización de Recursos</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Exploración Autónoma</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Aproveché varios recursos más allá del material del curso, incluyendo documentación, tutoriales y foros comunitarios. Aprender a encontrar y evaluar recursos de forma independiente es una habilidad que me servirá en el aprendizaje continuo.
+                  Complementé el material del curso con documentación oficial, tutoriales avanzados, y 
+                  experimentación personal. Esta curiosidad autodidacta me preparó para el aprendizaje 
+                  continuo post-curso.
+                </p>
+
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Integración de Tecnologías</h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  A medida que avanzaba, aprendí a conectar conceptos entre diferentes tecnologías. 
+                  Ver cómo React consume APIs Django, o cómo los microservicios se comunican, me dio una 
+                  perspectiva sistémica del desarrollo full-stack.
                 </p>
               </div>
             </div>
 
+            {/* Mirando Hacia Adelante */}
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8">
               <div className="flex items-center mb-6">
                 <GraduationCap className="text-blue-600 dark:text-blue-400 mr-2" size={24} />
@@ -100,41 +194,68 @@ const FinalReflection: React.FC = () => {
               </div>
               <div className="space-y-4">
                 <p className="text-slate-600 dark:text-slate-300">
-                  Este viaje de aprendizaje ha establecido una base sólida para mi continuo crecimiento como desarrollador web. Mirando hacia adelante, planeo:
+                  Este viaje de aprendizaje ha establecido una base sólida y versátil para mi carrera en 
+                  desarrollo web. Con conocimientos que abarcan desde interfaces de usuario hasta 
+                  arquitecturas distribuidas, estoy preparado para abordar desafíos complejos del mundo real.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Profundizar en Conocimientos Técnicos</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Especializaciones Técnicas Futuras</h3>
+                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+                  <ul className="space-y-2 text-slate-600 dark:text-slate-300">
+                    <li>• <strong>Frontend Avanzado:</strong> Next.js, Svelte, WebAssembly, Progressive Web Apps</li>
+                    <li>• <strong>Backend Especializado:</strong> GraphQL, Event Sourcing, CQRS, Serverless</li>
+                    <li>• <strong>DevOps y Cloud:</strong> AWS/Azure, Terraform, CI/CD avanzado, Service Mesh</li>
+                    <li>• <strong>Emerging Tech:</strong> Web3, AI/ML integrations, Edge Computing</li>
+                  </ul>
+                </div>
+                
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Proyectos de Portafolio Ambiciosos</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Quiero explorar más a fondo conceptos avanzados de React, aprender sobre bibliotecas de gestión de estado como Redux, y sumergirme en renderizado del lado del servidor y Next.js. También estoy interesado en explorar TypeScript para desarrollo JavaScript con tipos seguros.
+                  Planeo desarrollar aplicaciones full-stack complejas que integren múltiples tecnologías 
+                  aprendidas: SPAs con React, backends con Django/FastAPI, bases de datos distribuidas, 
+                  y despliegue en arquitecturas cloud-native.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Construir Proyectos Más Complejos</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Contribución a la Comunidad</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Para solidificar mis habilidades, planeo desarrollar aplicaciones más sofisticadas que integren múltiples tecnologías y aborden problemas del mundo real. El aprendizaje basado en proyectos seguirá siendo central para mi crecimiento.
+                  Mi objetivo es contribuir a proyectos open source, especialmente en el ecosistema Django 
+                  y React. También quiero compartir conocimiento a través de blogs técnicos y mentoring 
+                  a futuros desarrolladores.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Contribuir al Código Abierto</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Aprendizaje Continuo Estructurado</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Participar en proyectos de código abierto me expondrá a diferentes bases de código y prácticas de desarrollo colaborativo. Esto mejorará tanto mis habilidades técnicas como mi capacidad para trabajar con otros.
+                  El desarrollo web evoluciona constantemente. Mantendré un régimen de aprendizaje que incluye 
+                  seguir blogs técnicos, participar en conferencias, experimentar con tecnologías emergentes, 
+                  y mantener certificaciones relevantes.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Mantenerme al Día con Tendencias de la Industria</h3>
+                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Impacto Profesional</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  El desarrollo web evoluciona rápidamente, por lo que necesitaré mantenerme informado sobre tecnologías emergentes y mejores prácticas. El aprendizaje continuo será esencial a lo largo de mi carrera.
+                  Busco oportunidades donde pueda aplicar tanto mis habilidades frontend como backend, 
+                  contribuir a decisiones arquitecturales, y eventualmente liderar equipos de desarrollo 
+                  en proyectos de impacto significativo.
                 </p>
                 
-                <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-6">Reflexiones Finales</h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  Este curso no solo me ha enseñado habilidades técnicas sino también cómo aprender efectivamente en un campo técnico. La capacidad de abordar nuevos conceptos metódicamente, practicar deliberadamente y reflexionar sobre mi aprendizaje será invaluable mientras continúo creciendo como desarrollador.
-                </p>
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-6 mt-8">
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">Reflexión Final</h3>
+                  <p className="text-slate-600 dark:text-slate-300">
+                    Este curso no solo me equipó con habilidades técnicas diversas, sino que me enseñó a 
+                    pensar como un desarrollador full-stack. La capacidad de ver el panorama completo 
+                    —desde la experiencia del usuario hasta la infraestructura de backend— me permitirá 
+                    crear soluciones más elegantes y eficientes. Más importante aún, desarrollé una 
+                    metodología de aprendizaje que me servirá a lo largo de mi carrera en este campo 
+                    dinámico y emocionante.
+                  </p>
+                </div>
                 
                 <div className="mt-8 text-center">
                   <Link
                     to="/bibliography"
-                    className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                    className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-lg"
                   >
-                    Ver Bibliografía
-                    <ArrowRight className="ml-1" size={16} />
+                    Ver Bibliografía Completa
+                    <ArrowRight className="ml-2" size={20} />
                   </Link>
                 </div>
               </div>

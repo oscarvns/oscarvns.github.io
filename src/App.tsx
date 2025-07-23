@@ -17,11 +17,20 @@ import Bibliography from './pages/Bibliography';
 import { ThemeProvider } from './context/ThemeContext';
 import Week2 from './pages/notebook/Week2';
 import Week3 from './pages/notebook/Week3';
+import Week9 from './pages/notebook/Week9';
+import Week10 from './pages/notebook/Week10';
+import Week11 from './pages/notebook/Week11';
+import Week12 from './pages/notebook/Week12';
+import Week13 from './pages/notebook/Week13';
+import Week14 from './pages/notebook/Week14';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
+        {/* <div className="min-h-screen flex flex-col bg-s late-50 dark:bg-slate-900 transition-colors duration-300"> */}
         <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
           <Navbar />
           <motion.main
@@ -42,6 +51,12 @@ function App() {
               <Route path="/notebook/week-5" element={<Week5 />} />
               <Route path="/notebook/week-6" element={<Week6 />} />
               <Route path="/notebook/week-7" element={<Week7 />} />
+              <Route path="/notebook/week-9" element={<Week9 />} />
+              <Route path="/notebook/week-10" element={<Week10 />} />
+              <Route path="/notebook/week-11" element={<Week11 />} />
+              <Route path="/notebook/week-12" element={<Week12 />} />
+              <Route path="/notebook/week-13" element={<Week13 />} />
+              <Route path="/notebook/week-14" element={<Week14 />} />
               <Route path="/final-reflection" element={<FinalReflection />} />
               <Route path="/bibliography" element={<Bibliography />} />
             </Routes>
